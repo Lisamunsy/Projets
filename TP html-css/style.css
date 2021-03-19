@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  height: 100%;
+
+  font-family: "Merriweather", serif;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 50px 0;
+}
+header {
+  background: url("assets/header.jpg") no-repeat top/cover;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  color: white;
+  margin: auto;
+}
+.header-content img {
+  width: 20%;
+  margin: 20px 0;
+  object-fit: contain;
+}
+.header-content ul {
+  width: auto;
+  padding: 20px;
+  align-items: center;
+}
+.header-content li {
+  padding-left: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+.header-content li:hover {
+  color: gold;
+}
+.header-content li:last-child {
+  padding: 5px 20px;
+  background: linear-gradient(
+    to bottom,
+    rgb(213, 21, 21, 0.6),
+    rgb(78, 19, 19, 0.6)
+  );
+  margin-left: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+
+  transition: ease-in-out 100ms all;
+}
+.header-content li:last-child:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(213, 21, 21, 1),
+    rgb(78, 19, 19, 1)
+  );
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 70px;
+}
+.jeux {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.jeux-content {
+  background: url("assets/games.jpg") no-repeat center/cover;
+  height: 350px;
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.contenu-jeux {
+  width: 50%;
+}
+span {
+  text-transform: uppercase;
+  color: green;
+  font-weight: bolder;
+}
+.jeux-content p {
+  padding-bottom: 40px;
+}
+.jeux-content a {
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, rgb(213, 21, 21), #4e1313);
+  padding: 15px 25px;
+  color: gold;
+  transition: ease-in-out 100ms all;
+}
+.jeux-content a:hover {
+  color: white;
+}
+
+.produits {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.produits ul {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.produits li {
+  width: 25%;
+  transition: none;
+  border-bottom: solid 4px transparent;
+}
+.produits li:hover {
+  background: linear-gradient(to bottom, white, rgba(110, 110, 110, 0.082));
+  border-bottom: solid 4px #666666;
+}
+.produits a {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.produits p {
+  margin-top: 50px;
+}
+
+footer {
+  background: url("assets/footer.jpg") no-repeat top/cover;
+}
+.footer-content {
+  width: 60%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+.logo-footer {
+  font-size: 24px;
+  opacity: 0.5;
+  transition: ease-in-out 100ms all;
+}
+.logo-footer:hover {
+  opacity: 1;
+}
+.footer-content nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+.footer-content nav img {
+  width: 30%;
+  padding: 30px 0;
+}
+.follow {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.bottom ul {
+  width: 23%;
+  flex-direction: column;
+}
+.acheter {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.bottom ul li:first-child {
+  font-weight: bolder;
+}
+@media screen and (min-width: 400px) {
+  header p {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    max-width: 400px;
+  }
+
+  .header-content {
+    height: 100%;
+    padding: 0;
+    width: 96%;
+    align-items: center;
+  }
+  header nav ul {
+    display: none;
+  }
+  header p {
+    display: block;
+    margin-top: -15px;
+    font-size: 20px;
+  }
+  header {
+    margin-bottom: 10px;
+  }
+  main {
+    width: 96%;
+    font-size: 12px;
+  }
+  h2 {
+    padding: 20px 0;
+  }
+  .jeux {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .jeux-content {
+    width: 100%;
+    height: 250px;
+
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+  .contenu-jeux {
+    width: 60%;
+  }
+  .produits {
+    padding-top: 10px;
+  }
+  .produits li {
+    width: 33%;
+  }
+
+  footer {
+    width: 100%;
+  }
+  .footer-content {
+    padding: 20px 0;
+    width: 96%;
+  }
+  .footer-content nav {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .footer-content nav img {
+    width: 40%;
+    padding-bottom: 20px;
+    align-self: flex-start;
+  }
+  footer nav p {
+    display: none;
+  }
+  .follow {
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .bottom {
+    font-size: 12px;
+    flex-direction: column;
+  }
+  .bottom ul {
+    justify-self: center;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 30%;
+  }
+  .acheter {
+    width: 100%;
+    padding-left: 20%;
+  }
+}
